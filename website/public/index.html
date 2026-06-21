@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Used Car Dealership</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Used Car Dealership</h1>
+    <p>Available inventory</p>
+  </header>
+
+  <main class="page-layout">
+    <aside class="filter-panel">
+      <h2>Filter Options</h2>
+
+      <label for="sort-select">Sort by</label>
+      <select id="sort-select">
+        <option value="year-asc">Year: Old to New</option>
+        <option value="year-desc">Year: New to Old</option>
+        <option value="price-asc">Price: Low to High</option>
+        <option value="price-desc">Price: High to Low</option>
+      </select>
+
+      <label for="max-price">Max Price</label>
+      <input type="number" id="max-price" placeholder="Example: 15000">
+
+      <label for="min-year">Minimum Year</label>
+      <input type="number" id="min-year" placeholder="Example: 2015">
+
+      <button id="clear-filters">Clear Filters</button>
+    </aside>
+
+    <section id="vehicle-list" class="vehicle-grid"></section>
+  </main>
+
+  <div id="vehicle-modal" class="modal hidden">
+    <div class="modal-content">
+      <button id="modal-close" class="model-close">&times;</button>
+
+      <div class="modal-image-section">
+        <button id="prev-image" class="image-arrow left-arrow">&#10094;</button>
+
+        <img id="modal-image" src="" alt="Vehicle image" class="modal-image">
+
+        <button id="next-image" class="image-arrow right-arrow">&#10095</button>
+      </div>
+
+      <div id="modal-info" class="modal-info"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
