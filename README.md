@@ -6,19 +6,14 @@ Group Name: Group 5
 Class Section: [CS-355-001]
 Group Members
 Name
-Student ID
 Email
 [Arturo Nunez Gomez]
-[008117701]
 [nunezgomea@sonoma.edu]
 [Homero Arellano]
-[007871871]
 [arellanome@sonoma.edu]
 [Tadhg Cahill]
-[003517753]
 [cahillt@sonoma.edu]
 [Emilio Orozco]
-[008164878]
 [orozcoem@sonoma.edu]
 
 1. Application Description
